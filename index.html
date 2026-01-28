@@ -44,11 +44,11 @@
 						<span class="arrow">&#9660;</span>
 					</a>
 					<ul class="dropdown-content">
-						<li><a href="#materials">Полезные материалы</a></li>
+						<!-- <li><a href="#materials">Полезные материалы</a></li> -->
 						<li><a href="#downloads">Скачать всё</a></li>
 						<li><a href="#checklist">Чек-лист</a></li>
 						<li><a href="#mistakes">Типичные ошибки</a></li>
-						<li><a href="#deadline">Дедлайны</a></li>
+						<!-- <li><a href="#deadline">Дедлайны</a></li> -->
 					</ul>
 				</li>
 
@@ -120,7 +120,7 @@
 	<main>
 		<section class="main-section">
 			<h1 class="hero-title">Переводитесь <br> в РГУ им. А.Н. Косыгина <br> без стресса</h1>
-			<p class="hero-subtitle">Пошаговая инструкция, которая проведет вас от идеи до зачисления. Четко, ясно, ничего лишнего.</p>
+			<p class="hero-subtitle">Пошаговая инструкция, <br>которая проведет вас от идеи до зачисления <br>Четко, ясно, ничего лишнего!</p>
 			<a href="#steps" class="cta-button">Начать перевод</a>
 		</section>
 
@@ -212,7 +212,7 @@
 			</div>
 		</section>
 
-		<section id="materials" class="materials-section">
+<!-- 		<section id="materials" class="materials-section">
 			<h2 class="section-title">Полезные материалы</h2>
 			<div class="materials-container">
 				<div class="material-card">
@@ -222,7 +222,7 @@
 					<ul class="download-list">
 						<li><a href="documents/zayavlenie.docx" class="download-link" target="_blank" rel="noopener noreferrer">Бланк заявления о переводе</a></li>
 						<li><a href="documents/soglasie.docx" class="download-link" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a></li>
-						<!-- <li><a href="#" class="download-link" target="_blank" rel="noopener noreferrer">Образец справки об обучении НЕТ</a></li> -->
+						<li><a href="#" class="download-link" target="_blank" rel="noopener noreferrer">Образец справки об обучении НЕТ</a></li>
 					</ul>
 				</div>
 				<div class="material-card">
@@ -231,7 +231,7 @@
 					<p>Изучите успешные кейсы перевода и примеры заполнения документов</p>
 					<ul class="download-list">
 						<li><a href="#" class="download-link" target="_blank" rel="noopener noreferrer">Пример заполненного заявления НЕТ</a></li>
-						<!-- <li><a href="#" class="download-link" target="_blank" rel="noopener noreferrer">Образец заполнения заявления НЕТ</a></li> -->
+						<li><a href="#" class="download-link" target="_blank" rel="noopener noreferrer">Образец заполнения заявления НЕТ</a></li>
 						<li><a href="#" class="download-link" target="_blank" rel="noopener noreferrer">Типичные ошибки при переводе НЕТ</a></li>
 					</ul>
 				</div>
@@ -246,7 +246,7 @@
 					</ul>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section id="checklist" class="checklist-section">
 			<h2 class="section-title">Готов ли ты к переводу?</h2>
@@ -318,7 +318,7 @@
 			</div>
 		</section>
 
-		<section id="calculator" class="calculator-section">
+<!-- 		<section id="calculator" class="calculator-section">
 			<h2 class="section-title">Калькулятор шансов на перевод</h2>
 			<div class="calculator-container">
 				<div class="calculator-card">
@@ -351,7 +351,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="reviews-section" id="reviews">
 			<div class="reviews-container">
@@ -606,7 +606,7 @@
 			</div>
 		</section>
 
-		<section id="deadline" class="deadline-section">
+<!-- 		<section id="deadline" class="deadline-section">
 			<div class="deadline-container">
 				<div class="deadline-card">
 					<div class="deadline-icon">⏰</div>
@@ -636,7 +636,7 @@
 					<a href="" class="deadline-button">Скачать документы</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section id="contacts" class="contacts-section">
 			<h2 class="section-title">Контакты</h2>
@@ -771,7 +771,7 @@
 					<h2 class="section-title">Оставьте заявку на консультацию по переводу</h2>
 					<p class="application-subtitle">Наш специалист свяжется с вами в течение 2 часов для бесплатной консультации</p>
 
-					<div class="application-features">
+<!-- 					<div class="application-features">
 						<div class="feature">
 							<div class="feature-icon">✅</div>
 							<p>Проверим академическую разницу бесплатно</p>
@@ -785,33 +785,35 @@
 							<p>Забронируем место на выбранной специальности</p>
 						</div>
 					</div>
-
+ -->
 					<form class="application-form" action="check_form.php" method="POST">
 						<div class="form-row">
 							<div class="form-group">
 								<input type="text" id="name" name="name" placeholder="Ваше ФИО" required>
 							</div>
 							<div class="form-group">
-								<input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+								<input type="tel" id="phone" name="phone" pattern="^\7\d{10}$" required placeholder="Введите номер в формате 79999999999">
+								<!-- <input type="tel" id="phone" name="phone" placeholder="Телефон" required> -->
 							</div>
 						</div>
 
 						<div class="form-row">
 							<div class="form-group">
-								<input type="email" id="email" name="email" placeholder="Email">
+								<input type="email" id="email" name="email" placeholder="Email" required>
 							</div>
 							<div class="form-group">
-								<select id="faculty" name="faculty">
-									<option value="">Интересующий факультет</option>
-									<option value="it">Институт информационных технологий</option>
-									<option value="design">Дизайн и мода</option>
-									<option value="economics">Экономика и менеджмент</option>
-								</select>
+								<!-- <select id="faculty" name="faculty"> -->
+									<input type="faculty" id="faculty" name="faculty" placeholder="Институт информационных технологий" value="Институт информационных технологий" readonly>
+									<!-- <option value="">Интересующий факультет</option> -->
+									<!-- <option value="it">Институт информационных технологий</option> -->
+									<!-- <option value="design">Дизайн и мода</option> -->
+									<!-- <option value="economics">Экономика и менеджмент</option> -->
+								<!-- </select> -->
 							</div>
 						</div>
 
 						<div class="form-group">
-							<textarea id="message" name="message" placeholder="Откуда переводитесь и какие вопросы есть?" rows="3"></textarea>
+							<textarea id="message" name="message" placeholder="Откуда переводитесь и какие вопросы есть?" rows="3" required></textarea>
 						</div>
 
 						<div class="form-agreement">
@@ -833,7 +835,7 @@
 				<h3>Навигация</h3>
 				<ul>
 					<li><a href="#steps">Этапы перевода</a></li>
-					<li><a href="#materials">Полезные материалы</a></li>
+					<!-- <li><a href="#materials">Полезные материалы</a></li> -->
 					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</div>
@@ -852,13 +854,13 @@
 				<ul>
 					<li><a href="https://rguk.ru/" target="_blank">Официальный сайт РГУ Косыгина</a></li>
 					<li><a href="https://rguk.ru/sveden/vacant/" target="_blank">Вакантные места</a></li>
-					<li><a href="https://rguk.ru/university/college/abitur/priem/" target="_blank">Приемная комиссия</a></li>
+					<li><a href="https://rguk.ru/applicant/" target="_blank">Приемная комиссия</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="footer-bottom">
-			<p>© 2025 РГУ им. А.Н. Косыгина <!-- Сайт для помощи в переводе. --></p>
+			<p>© 2026 РГУ им. А.Н. Косыгина <!-- Сайт для помощи в переводе. --></p>
 		</div>
 	</footer>
 </body>
